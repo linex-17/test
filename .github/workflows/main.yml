@@ -22,7 +22,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Build Kernel
+    - name: Build Kernelmain
       uses: ./
       with:
           kernel-url: https://gitlab.com/androidsantoni/kernel/kernel_xiaomi_msm8937
@@ -34,8 +34,8 @@ jobs:
           aosp-clang: true
           ksu: false
           ksu-version: false
-          android-version: 11
+          android-version: 13
           aosp-clang-version: r383902
-          python-27: false
+          python-27: true
           disable-lto: true
           anykernel3: true
