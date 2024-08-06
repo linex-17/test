@@ -32,10 +32,10 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: true
-          ksu-version: v0.7.6
+          ksu: false
+          ksu-version: false
           android-version: 11
           aosp-clang-version: r383902
-          python-27: true
+          python-27: false
           disable-lto: true
           anykernel3: true
