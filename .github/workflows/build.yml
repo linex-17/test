@@ -1,5 +1,5 @@
 # A simple action usage
-name: Build Kernel
+name: Build Kernel Test
 on:
   workflow_dispatch:
 
@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Build Kernel
-      uses: dabao1955/kernel_build_action@main
+      uses: linex-17/idk@main
       with:
           kernel-url: https://gitlab.com/androidsantoni/kernel/kernel_xiaomi_msm8937
           kernel-dir: msm-4.9
@@ -22,10 +22,10 @@ jobs:
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          ksu: true
-          ksu-version: v0.6.6
+          ksu: false
+          ksu-version: false
           android-version: 11
           aosp-clang-version: r383902
-          python-27: true
+          python-27: false
           disable-lto: true
           anykernel3: true
