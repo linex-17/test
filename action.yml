@@ -38,7 +38,7 @@ inputs:
   android-version:
     description: 'Android version.'
     required: true
-    default: 12
+    default: 11
   ksu:
     description: 'KernelSU function support'
     required: false
@@ -163,7 +163,7 @@ runs:
              export SWAP_FILE=$(swapon --show=NAME | tail -n 1)
              sudo swapoff $SWAP_FILE
              sudo rm $SWAP_FILE
-             sudo fallocate -l 16G $SWAP_FILE
+             sudo fallocate -l 1G $SWAP_FILE
              sudo chmod 600 $SWAP_FILE
              sudo mkswap $SWAP_FILE
              sudo swapon $SWAP_FILE
