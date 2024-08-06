@@ -18,7 +18,7 @@ jobs:
           kernel-url: https://gitlab.com/androidsantoni/kernel/kernel_xiaomi_msm8937
           kernel-dir: msm-4.9
           kernel-branch: 13
-          config: defconfig
+          config: msm8937_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
