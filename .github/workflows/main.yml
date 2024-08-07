@@ -25,7 +25,7 @@ jobs:
     - name: Build Kernelmain
       uses: ./
       with:
-          kernel-url: https://gitlab.com/androidsantoni/kernel/kernel_xiaomi_msm8937.git
+          kernel-url: https://gitlab.com/linex-17/kernel_xiaomi_msm8937.git
           kernel-dir: msm-4.9
           kernel-branch: 13
           config: santoni_treble_defconfig
