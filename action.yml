@@ -369,6 +369,8 @@ runs:
          elif [ ${{ inputs.android-ndk }} = true ]; then
               COMMAND+=" CLANG_PATH=$HOME/android-ndk-${{ inputs.android-ndk-version }}/toolchains/llvm/prebuilt/linux-x86_64"
          fi
+         export KBUILD_BUILD_USER="linex"
+         export KBUILD_BUILD_HOST="project"
          export PATH=$CLANG_PATH/bin:$PATH
          if [ ${{ inputs.aosp-gcc }} = true ]; then
              COMMAND+=" CROSS_COMPILE=$HOME/gcc-64/bin/aarch64-linux-android- COMPILE_ARM32=$HOME/gcc-32/bin/arm-linux-androideabi- CLANG_TRIPLE=aarch64-linux-gnu-"
