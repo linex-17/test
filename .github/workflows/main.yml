@@ -35,6 +35,8 @@ jobs:
           ksu: false
           ksu-version: false
           ksu-lkm: false
+          nethunter: true
+          nethunter-patch: true
           android-version: 11
           aosp-clang-version: r383902
           python-27: true
