@@ -42,15 +42,15 @@ inputs:
   ksu:
     description: 'KernelSU function support'
     required: false
-    default: false
+    default: true
   ksu-version:
     description: 'KernelSU default branch'
     required: false
-    default: false
+    default: v0.7.6
   ksu-lkm:
     description: "Build KernelSU as a loadable kernel module"
     required: false
-    default: false
+    default: true
   disable-lto:
     description: 'Disable LTO configs for configs.'
     required: false
